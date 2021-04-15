@@ -101,7 +101,7 @@ app.use(
 
 const store = new MongoStore({
     url: dbUrl,
-    secret: 'secret' || process.env.SECRET,
+    secret: process.env.SECRET || 'secret',
     touchAfter: 24 * 60 * 60 //update every 24h
 })
 
@@ -109,7 +109,7 @@ const store = new MongoStore({
 const sessionConfig = {
     store,
     name: 'webapp',
-    secret: 'secret' || process.env.SECRET,
+    secret: process.env.SECRET || 'secret',
     resave: false,
     saveUninitialized: true,
     cookie: {
