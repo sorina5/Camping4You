@@ -15,14 +15,14 @@
                 <div class="row">
                     <div class="col-md-4">
                         <% if (campsite.images.length) { %>
-                        <img class="img-fluid" alt="" src="<%= campsite.images[0].url %>">
+                        <img class="card-img-top embed-responsive-item" alt="" src="<%= campsite.images[0].url %>">
                         <% } %>
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
                             <h5 class="card-title"><%= campsite.title %></h5>
                             <p class="card-text"><%= campsite.description %></p>
-                            <p class="card-text"><%= campsite.description %></p>
+                            <!-- <p class="card-text"><%= campsite.description %></p> -->
                             <p class="card-text"><small class="text-muted"><%= campsite.location %></small></p>
                             <a class="btn btn-primary" href="/campsites/<%= campsite._id %>">View <%= campsite.title %></a>
                         </div>

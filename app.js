@@ -116,7 +116,7 @@ const sessionConfig = {
         httpOnly: true,
         //secure:true;
         expires: Date.now() + 1000 * 60 * 60 * 24 * 7, //the cookie will expire in one week, not to be able to stay sign in forever.
-        maxAge: 1000 * 60 * 60 * 24 * 7
+        //axAge: 1000 * 60 * 60 * 24 * 7
     }
 } 
 
